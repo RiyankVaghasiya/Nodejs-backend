@@ -18,4 +18,20 @@ router.route("/register").post(
   registerUser
 );
 
-export default router;
+//we can also do above operation like this
+// router.post(
+//   "/register",
+//   upload.fields([
+//     {
+//       name: "avatar",
+//       maxCount: 1,
+//     },
+//     {
+//       name: "coverImage",
+//       maxCount: 1,
+//     },
+//   ]),
+//   registerUser
+// );
+
+export { router };
