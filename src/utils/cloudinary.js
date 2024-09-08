@@ -1,7 +1,7 @@
 import { v2 as cloudinary } from "cloudinary";
-import { User } from "../models/user.model";
+import { User } from "../models/user.model.js";
 import fs from "fs";
-import { ApiError } from "./ApiError";
+import { ApiError } from "./ApiError.js";
 import { response } from "express";
 
 cloudinary.config({
